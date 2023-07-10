@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/*nav*/
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor_logo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px ;
+}
+
+.contenedor{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+
+}
+
+.contenedor li{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bolder;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    z-index: 9;
+    font-weight: 400;
+}
+
+  .contenedor li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    top: 20px;
+    background: #000;
+    height: 2px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .contenedor li:hover:before, .contenedor li:focus:before, .contenedor li:active:before {
+    left: 0;
+    right: 0;
+  }
+
+.contenedor li img{
+    height: 25px;
+    width: 25px;
+   
+}
+
+.imagen::before{
+display: none;
+}
+
+@keyframes rebota{
+    0%{
+        transform: translateY(5px);
+    }
+
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+.etiqueta:hover .efecto{
+animation: rebota 0.9s;
+}
+
+.etiqueta{
+ flex-direction: row !important; 
+ gap: 6px;
+}
+
+.efecto{
+    transition: ease-in 200ms;
+}
+
+.etiqueta::before{
+    display: none;
+}
+
+.contenedor_ul{
+    display: flex;
+    gap: 60px;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.etiqueta{
+    display: flex;
+    flex-direction: column ;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropDown{
+    position: absolute;
+    background-color: #282828;
+    border-radius: 12px;
+    padding: 1rem;
+    color: white;
+    top: 25px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    z-index: 4;
+    
+}
+
+.etiqueta:has(.dropDown:hover) img {
+    animation: none;
+}
+
+.li_submenu::before {
+    display: none;
+}
+.open{
+    display: flex;
+}
+
+/*form*/
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.formulario h1{
+ top: 0;
+}
+.formulario img{
+    width: 100px;
+    height: 100px;
+}
+
+.formulario input{
+    margin: 10px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+
+.formulario button{
+    width: 165px;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: all 200ms;
+    margin-top: 20px;
+}
+
+.formulario button:hover{
+    color: #ffff;
+    background-color: #000;
+}
+
+.formulario a{
+    font-size: 12px;
+    margin: 10px;
+    margin-right: 45px;
+}
+
+.aside{
+    background-image: url(../img/back.png);
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+.aside h1{
+    justify-content: center;
+    margin-top: 45%;
+    
+    display: flex;
+    position: relative;
+    z-index: 9 ; 
+    color: #ffff;
+}
+
+.aside::before{
+    content: "";
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+
+/*Login*/
+
+
+.aside2{
+    background-image: url(../img/back.png);
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+.aside2 h1{
+    justify-content: center;
+    margin-top: 45%;
+    display: flex;
+    position: relative;
+    z-index: 9 ; 
+    color: #ffff;
+}
+
+.aside2::before{
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+.form{
+    background: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    gap: 7px;
+    border: solid black 3px;
+}
+
+.form h1{
+ top: 0;
+ position: relative;
+ display: block;
+}

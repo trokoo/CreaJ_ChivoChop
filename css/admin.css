@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background: #000000;
+}
+
+.form{
+    background: #000000;
+    width: 500px;
+    margin:  200px auto;
+    padding: 10%;
+    border-radius: 10px;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border: #fff 1px solid;
+}
+
+.relleno{
+    
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.form h1{
+    color: #ffffff;
+    bottom: 390px;
+    font-weight: 300px;
+    position: absolute;
+    right: 210px;
+}
+
+h3{
+    color: #fff;
+    position: absolute;
+    top: 31px;
+    left: 40px;
+    font-size: 30px;
+}
+
+li{
+    list-style: none;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+ }
+ 
+ li a {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #000000;
+     color: white;
+     text-decoration: none;
+     list-style: none;
+     border-radius: 4px;
+     border: #fff 1px solid;
+ }
+   
+ li a:hover {
+     background-color: #ffffff;
+     color: #000000;
+     border: #000000 1px solid;
+ }
+   
+ li a:focus {
+     outline: none;
+ }
+
+  
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="submit"] {
+    
+    display: block;
+    width: 135%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+}
+  
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 solid 1px;
+}
+  
+input[type="submit"]:focus {
+    outline: none;
+}
+  
+.file-input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file-input-container input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .file-input-container label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .file-input-container img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    
+    top: -5px;
+  }
+  
+
+  
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+input[type="number"]::-webkit-input-placeholder {
+    text-align: right;
+}
+
+
+.form2{
+    background: #000000;
+    width: 500px;
+    margin: 10%;
+    padding: 10%;
+    border-radius: 10px;
+    position: absolute;
+    top: -23px;
+    left: 590px;
+    min-height: 150px;
+    border: #fff 1px solid;
+}
+
+.form2 h1{
+    color: #fff;
+    position: absolute;
+    top: 53px;
+    right: 180px;
+}
